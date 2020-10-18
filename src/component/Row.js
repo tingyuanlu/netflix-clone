@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import YouTube from "react-youtube";
 import movieTrailer from "movie-trailer";
 import axios from "./axios";
-import "./Row.css";
+import "./css/Row.css";
 const base_url = "https://image.tmdb.org/t/p/original/";
 function Row({ title, fetchUrl, isLargeRow }) {
   const [movies, setMovies] = useState([]);

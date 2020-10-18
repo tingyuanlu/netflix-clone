@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import requests from "./request";
 import axios from "./axios";
-import "./banner.css";
+import "./css/banner.css";
 function Banner() {
   const [movie, setMovie] = useState([]);
 
@@ -30,6 +30,13 @@ function Banner() {
         backgroundPosition: "center center",
       }}
     >
+      <link
+        rel="icon"
+        href=" https://www.flaticon.com/free-icon/netflix_870910"
+        type="image/gif"
+        sizes="16x16"
+      ></link>
+
       <div className="banner__contents">
         <h1 className="banner__title">
           {movie?.title || movie?.name || movie?.original_name}
